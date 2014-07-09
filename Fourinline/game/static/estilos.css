@@ -1,0 +1,236 @@
+a{
+	text-decoration:none;
+}
+a:hover{
+	cursor: context-menu;
+}
+article{
+	background: blue;
+	border-radius:15px;
+	border:2px solid black;
+	cursor: pointer;
+	display: inline-block;
+	margin: 10%;
+	padding: 2%;
+	text-align: center;
+	width: 25%;
+}
+article p{
+	color: white;
+	cursor: pointer;
+}
+body{
+	background: #000;
+	height: 97%;
+	width: 100%;
+}
+h1{
+	color: #fff;
+	cursor: context-menu;
+	text-align: center;
+}
+html{
+	height: 100%;
+	width: 100%;
+}
+p{
+	color: #fff;
+	cursor:context-menu;
+	display: inline-block;
+	margin: 0.5%;
+}
+p.blue{
+	color:blue;
+}
+p.red{
+	color: red;
+}
+p.pink{
+	color: pink;
+}
+p.orange{
+	color: orange;
+}
+p.purple{
+	color: purple;
+}
+p.black{
+	color:white;
+}
+p.green{
+	color: green;
+}
+section.home{
+	height: 14%;
+	margin: auto;
+	width: 57%;
+}
+#areboot{
+	color:white;
+}
+#areboot:link{
+	text-align: none;
+}
+#areboot:hover{
+	text-align: none;
+}
+#areboot :active{
+	background:red;
+}
+#contenido{
+	background: #006;
+	border-radius: 22px;
+	border:5px solid gray;
+	height: 14%;
+	margin:auto;
+	min-width:440px ;
+	min-height:137px;
+	padding: 4%;
+	width: 30%;
+}
+#contenido .send{
+	margin: 9% 0 0 37%;
+}
+#ganador{
+	background: blue;
+	border-radius:15px;
+	border:2px solid black;
+	display: inline-block;
+	height: 7%;
+	margin: 0;
+	min-height:56px; 
+	min-width:98px;
+	padding-top: 2%;
+	text-align: center;
+	width: 10%;
+}
+#main{
+	display: inline-block;
+	height: 66%;
+	margin: 0;
+	min-height: 341px;
+	min-width: 496px;
+	vertical-align: top;
+	width: 85%;
+}
+#main ul{
+	background: dimgrey;
+	display: inline-block;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	width:13%;
+}
+
+#reboot{
+	background: blue;
+	border-radius:15px;
+	border:2px solid black;
+	cursor: pointer;
+	display: inline-block;
+	height: 7%;
+	margin: 19% 0 0 2%;
+	min-width: 82px;
+	min-height: 40px;
+	padding-top: 2%;
+	text-align: center;
+	width: 10%;
+}
+#reboot:hover{
+	background: #009;
+}
+#turno{
+	display: inline-block;
+	margin-top: 2%;
+	vertical-align: top;
+	width: 45.6%;
+}
+#turno li{
+	border:2px solid gray;
+	height: 16px;
+	margin: 0;
+	padding: 0;
+	width:20%;
+}
+#usuarios{
+	display: inline-block;
+	margin-top: 2%;
+	min-height: 68px;
+	min-width: 198px;
+	width: 40%;
+}
+li.blue,li.red,li.white,li.pink,li.orange,
+li.purple,li.black,li.green{
+	border:2px solid dimgrey;
+	border-radius:75px;
+	display: block;
+	height: 15.6%;
+	padding: 0;
+	margin: auto;
+	width: 70%;
+}
+
+li.blue{
+	background: blue;
+}
+
+li.red{
+	background: red;
+}
+
+li.white{
+	background: white;
+}
+li.pink{
+	background: pink;
+}
+li.orange{
+	background: orange;
+}
+li.purple{
+	background: purple;
+}
+li.black{
+	background: black;
+}
+li.green{
+	background: green;
+}
+.errorlist{
+	background: red;
+	color: white;
+	display: inline-block;
+	margin-top: 1%;
+	text-align: center;
+	width: 36%;	
+}
+.errorlist li{
+	text-decoration: none;
+}
+
+@media screen and (max-width: 812px) {
+	#reboot{
+	 	margin: 16% 0 0 0; 
+	}
+}
+@media screen and (max-width: 730px) {
+	ul{
+		min-width: 66px;
+		width: 13%; 
+	}
+	#reboot{
+		margin: 0;
+	}
+	#ganador{
+
+	}
+	#turno{
+		min-height: 43px;
+		vertical-align: top;
+		width: 39.6%;
+	}
+	#turno li{
+		width: 50%;
+	}
+}

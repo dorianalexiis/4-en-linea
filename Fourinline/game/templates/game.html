@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" 
+		  content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<title>4 in line</title>
+	<link rel="stylesheet" href="/static/normalize.css" />
+	<link rel="stylesheet" href="/static/estilos.css" />
+</head>
+<body>
+	<header>
+		<h1 >Play!</h1>
+	</header>
+	<!--MATRIZ DEL JUEGO -->
+	<section id="main">
+		{% for row in M %}
+				<ul>
+			<a href="{% url "play" row.numero %}">
+				{% for r in row.fila%}
+					<li class="{{r}}"></li>
+				{% endfor %}
+			</a>
+				</ul>
+		{% endfor %}
+	</section>
+	<!--Boton de Reinicio -->
+	<a id="areboot" href="/"><div id="reboot">REBOOT</div></a>
+	<!--Display para Mostrar Jugador del Juego-->
+	<div id="ganador"><p>{{Ganador}}</p></div>
+	<!--Seccion para los Usuarios -->
+	<section id="usuarios">
+		<section>
+			<p>Player 1:</p>
+			<p class="{{ColorJ1}}">{{Jugador1}}</p>
+			<p> - {{Puntaje1}} points</p>
+		</section>
+	<section>
+		<p>Player 2:</p>
+		<p class="{{ColorJ2}}">{{Jugador2}}</p>
+		<p> - {{Puntaje2}} points</p>
+	</section>
+	</section>
+	<!--Seccion para mostrar a que jugador le corresponde el turno-->
+	<section id="turno">
+		<p>Turn: </p>
+		<p>{{turnoPlayer}}</p>
+		<li class="{{turnoPlayer.color}}"></li>
+	</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
